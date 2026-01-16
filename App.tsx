@@ -83,7 +83,10 @@ const App: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
           {/* Arrival Scene hero image - positioned right */}
-          <div className="absolute inset-0 bg-[url('/hero-3.png')] bg-cover bg-right bg-no-repeat"></div>
+          <div 
+            className="absolute inset-0 bg-cover bg-right bg-no-repeat"
+            style={{ backgroundImage: `url('${import.meta.env.BASE_URL}hero-3.png')` }}
+          ></div>
           {/* Golden hour warm overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-brand-yellow/5 z-10"></div>
         </div>
